@@ -1,0 +1,77 @@
+/*Root Styles*/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Roboto";
+    background-color: teal;
+}
+
+#title-h1 {
+    font-family: "Playwrite AU SA";
+}
+
+pre code {
+    font-family: "Lucida Console";
+}
+
+/*Navigation Bar*/
+.navbar {
+    background-color: paleturquoise;
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.navbar-item {
+    position: relative;
+    font-size: 2rem;
+}
+
+/*Section Titles*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+/*Tables*/
+table {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+td h1, 
+td h2,
+td h3,
+td h4,
+td h5, 
+td h6 {
+    background-color: aquamarine;
+}
+
+ .table-head {
+    background-color: aqua;
+ }
+

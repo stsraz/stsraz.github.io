@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title-h1">Joe's Cheat Sheet</h1>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#html">HTML</a></li>
+                    <li class="navbar-item"><a href="#css">CSS</a></li>
+                    <li class="navbar-item"><a href="javascript">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <h1 id="html">HTML</h1>
+
+        <h2>HTML Tags - Headers</h2>
+
+        <table>
+            <thead>
+                <tr class="table-head">
+                    <td scope="col" class="table-head">Tag</td>
+                    <td scope="col" class="table-head">Example</td>
+                    <td scope="col" class="table-head">Default Size - rem</td>
+                    <td scope="col" class="table-head">Default Size - px - No Root Sizing</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr scope="row">
+                     <td><h1><pre><code></code></pre>&lt;h1&gt;</code></pre></h1></td>
+                     <td><h1>h1</h1></td>
+                     <td><h1>2 rem</h1></td>
+                     <td><h1>32px</h1></td>
+                </tr>
+                <tr scope="row">
+                     <td><h2><pre><code>&lt;h2&gt;</code></pre></h2></td>
+                     <td><h2>h2</h2></td>
+                     <td><h2>1.5 rem</h2></td>
+                     <td><h2>24 px</h2></td>
+                </tr>
+                <tr scope="row">
+                     <td><h3><pre><code>&lt;h3&gt;</code></pre></h3></td>
+                     <td><h3>h3</h3></td>
+                     <td><h3>1.17 rem</h3></td>
+                     <td><h3>18.72 px</h3></td>
+                </tr>
+                <tr scope="row">    
+                     <td><h4><pre><code>&lt;h4&gt;</code></pre></h4></td>
+                     <td><h4>h4</h4></td>
+                     <td><h4>1 rem</h4></td>
+                     <td><h4>16 px</h4></td>
+                </tr>
+                <tr scope="row">    
+                     <td><h5><pre><code>&lt;h5&gt;</code></pre></h5></td>
+                     <td><h5>h5</h5></td>
+                     <td><h5>0.83 rem</h5></td>
+                     <td><h5>13.28 px</h5></td>
+                </tr>
+                <tr scope="row">    
+                     <td><h6><pre><code>&lt;h6&gt;</code></pre></h6></td>
+                     <td><h6>h6</h6></td>
+                     <td><h6>0.67 rem</h6></td>
+                     <td><h6>10.72 px</h6></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>HTML Elements</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td class="table-head">Tag</td>
+                    <td class="table-head">Attributes</td>
+                    <td class="table-head">Description</td>
+                    <td class="table-head">Examples</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- <a></a> -->
+                <tr>
+                    <td><pre><code>&lt;a&gt;&lt;/a&gt;</code></pre></td>
+                    <td></td>
+                    <td>Creates hyperlinks in an HTML document.</td>
+                    <td><pre><code>&lt;a href="hyperlinkdestination.org" target="_blank"&gt;</code></pre></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>href</code></pre></td>
+                    <td>Determines the location the anchor element points to.</td>
+                    <td><pre><code>&lt;a href="#internalhyperlinkdestination" target="_blank"&gt;</code></pre></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>target="_blank"</code></pre></td>
+                    <td>Opens the hyperlink in a new tab.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>title</code></pre></td>
+                    <td>Adds a tooltip when the link is hovered over. Can be added to any HTML element. Causes accessibility issues so should be implemented with CSS and JavaScript.</td>
+                    <td></td>
+                </tr>
+                
+                <!-- <video></video> -->
+                <tr>
+                    <td><pre><code>&lt;video&gt;&lt;/video&gt;</code></pre></td>
+                    <td></td>
+                    <td>Embeds a media player for video playback.</td>
+                    <td><pre><code>&lt;video src="videolocation.mp4 " controls&gt;</code></pre></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>src</code></pre></td>
+                    <td>Contains the URL to the video.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>controls</code></pre></td>
+                    <td>Displays video controls in the media player.</td>
+                    <td></td>
+                </tr>
+
+                <!-- <em></em> -->
+                <tr>
+                    <td><pre><code>&lt;em&gt;&lt;/em&gt;</code></pre></td>
+                    <td></td>
+                    <td>The &lt;em&gt; element is an in-line element that <em>emphasizes</em> text, and browsers will usually italicize the emphasized text by default.</td>
+                    <td><pre><code>&lt;p&gt;This &lt;em&gt;word&lt;/em&gt; will be emphasized in the text.&lt;/p&gt;</code></pre><br>This <em>word</em> will be emphasized in the text.</td>
+                </tr>
+
+                <!-- <strong></strong> -->
+                <tr>
+                    <td><pre><code>&lt;strong&gt;&lt;/strong&gt;</code></pre></td>
+                    <td></td>
+                    <td>The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in <strong>bold</strong> by default.</td>
+                    <td><pre><code>&lt;p&gt;This &lt;strong&gt;word&lt;/strong&gt; will be bold in the text.&lt;/p&gt;</code></pre><br>This <strong>word</strong> will be bold in the text.</td>
+                </tr>
+
+                <!-- <img> -->
+                <tr>
+                    <td><pre><code>&lt;img&gt;</code></pre></td>
+                    <td></td>
+                    <td>HTML image elements embed images in documents.</td>
+                    <td><pre><code>&lt;img src="image.png" alt="Alt text goes here."&gt;</code></pre></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>src</code></pre></td>
+                    <td>The src attribute contains the image URL and is mandatory.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>alt</code></pre></td>
+                    <td>An <img> element can have alternative text via the alt attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 id="css">CSS</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Property</td>
+                    <td>Value</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Position -->
+                <tr>
+                    <td><strong>Position</strong></td>
+                    <td></td>
+                    <td>Sets how an element is positioned in a document.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Static</td>
+                    <td>The element is positioned according to the Normal Flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</td>
+                </tr>
+
+                <!-- Relative -->
+                 <tr>
+                    <td></td>
+                    <td>Relative</td>
+                    <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.<br><br>
+
+                    This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</td>
+                 </tr>
+
+                <!-- Absolute -->
+                <tr>
+                    <td></td>
+                    <td>Absolute</td>
+                    <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left. <br><br>
+
+                    This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</td>
+                </tr>
+
+                <!-- Fixed -->
+                <tr>
+                    <td></td>
+                    <td>Fixed</td>
+                    <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial containing block, which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left.<br><br>
+
+                    This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</td>
+                </tr>
+
+                <!-- Sticky -->
+                <tr>
+                    <td></td>
+                    <td>Sticky</td>
+                    <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.<br><br>
+
+                    This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.</td>
+                </tr>
+
+                <!-- Link Pseudo Classes -->
+                <tr>
+                    <td><strong>Link Pseudo Classes</strong></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>:link</code></pre></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>:visited</code></pre></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>:hover</code></pre></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>:active</code></pre></td>
+                    <td></td>
+                </tr>
+
+                <!-- Text Decoration -->
+                <tr>
+                    <td><pre><code>text-decoration:</code></pre></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>underline</code></pre></td>
+                    <td></td>
+                </tr>
+
+                <!-- Cursor -->
+                <tr>
+                    <td><pre><code>cursor:</code></pre></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><pre><code>pointer</code></pre></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+
+        <p>&copy;Joe Rasmussen</p>
+
+    </footer>
+</body>
+</html>
