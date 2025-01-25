@@ -1,0 +1,25 @@
+/*Root Styles*/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Roboto";
+    background-color: teal;
+}
+
+#title-h1 {
+    font-family: "Playwrite AU SA";
+    text-align: center;
+}
+
+/*Pictures*/
+#joe-headshot {
+    height: 25%;
+    width: 25%;
+}
+
+.intro {
+    display: block;
+}

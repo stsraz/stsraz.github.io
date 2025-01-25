@@ -9,38 +9,34 @@ body {
     background-color: teal;
 }
 
+/* My Name in Cursive for the Title */
 #title-h1 {
     font-family: "Playwrite AU SA";
 }
 
+/* Code Font */
 pre code {
     font-family: "Lucida Console";
 }
-
-/*Navigation Bar*/
-.navbar {
-    background-color: paleturquoise;
-    padding: 1rem;
-}
-
-.navbar-container {
+/*-- JCCS Navbar --*/
+.jccs-navbar-container {
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-menu {
+.jccs-navbar-menu {
     list-style: none;
     display: flex;
     gap: 1rem;
     margin: 0 auto;
 }
 
-.navbar-item {
+.jccs-navbar-item {
     position: relative;
     font-size: 2rem;
 }
 
-/*Section Titles*/
+/* Section Titles */
 h1,
 h2,
 h3,
@@ -51,7 +47,7 @@ h6 {
     background-color: lightseagreen;
 }
 
-/*Tables*/
+/* Tables */
 table {
     border: 1px solid black;
     text-align: center;
