@@ -9,11 +9,6 @@ body {
     background-color: teal;
 }
 
-/* My Name in Cursive for the Title */
-#title-h1 {
-    font-family: "Playwrite AU SA";
-}
-
 /* Code Font */
 pre code {
     font-family: "Lucida Console";

@@ -1,0 +1,40 @@
+/*Site Navigation Bar*/
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    background-color: #ADBBDA;
+}
+
+.navbar-item {
+    position: relative;
+    font-size: 1rem;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item a:hover {
+    background-color: #7091E6;
+}
+
+/* Page Title Styling */
+.title-h1 {
+    font-family: "Playwrite AU SA";
+    background-color: #8697C4;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 20px;
+}

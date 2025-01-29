@@ -1,0 +1,148 @@
+/* Root Styles */
+:root {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #ADBBDA;
+}
+
+h1 {
+    font-family: 'Playwrite AU SA';
+    font-size: 50px;
+}
+  
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: black;
+}
+
+.back-to-top a:hover {
+    background-color: #7091E6;
+}
+
+/* Colors */
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 0 20px 0 5px;
+
+    background-color: #3D52A0;
+}
+
+#color-1, #color-1 p {
+    grid-column: 1;
+    grid-row: 1;
+
+    background-color: #3D52A0;
+}
+
+#color-2, #color-2 p {
+    grid-column: 2;
+    grid-row: 1;
+
+    background-color: #7091E6;
+}
+
+#color-3, #color-3 p {
+    grid-column: 3;
+    grid-row: 1;
+
+    background-color: #8697C4;
+}
+
+#color-4, #color-4 p {
+    grid-column: 1;
+    grid-row: 2;
+
+    background-color: #ADBBDA;
+}
+
+#color-5, #color-5 p {
+    grid-column: 2;
+    grid-row: 2;
+
+    background-color: #EDE8F5;
+}
+
+.color-div {
+    margin: 5px 5px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Fonts */
+#font-style-container {
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 0 20px 0 5px;
+}
+
+.font-container {
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    list-style-type: none;
+}
+
+.font-roboto-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font-title-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* Text Styles */
+.text-style-container {
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 0 20px 0 5px;
+
+}
+
+.text-container {
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+.text-container ul {
+    list-style-type: none;
+}
