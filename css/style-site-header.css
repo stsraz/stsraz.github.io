@@ -1,29 +1,41 @@
+/*Variables*/
+
 /*Site Navigation Bar*/
 .navbar {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-width: 98vw;
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    width: 98%;
+    max-width: 98vw;
+    justify-content: center;
 }
 
 .navbar-menu {
-    list-style: none;
     display: flex;
-    gap: 1rem;
-    margin: 0 auto;
-    background-color: #ADBBDA;
-}
+    width: 98%;
+    max-width: 98vw;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
 
 .navbar-item {
     position: relative;
-    font-size: 1rem;
+    margin: 0 10px;
 }
 
 .navbar-item a {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .navbar-item a:hover {
@@ -33,8 +45,8 @@
 /* Page Title Styling */
 .title-h1 {
     font-family: "Playwrite AU SA";
-    background-color: #8697C4;
+    background-color: hsl(224, 34%, 65%);
     text-align: center;
     font-size: 3rem;
-    border-radius: 20px;
+    width: 100%;
 }

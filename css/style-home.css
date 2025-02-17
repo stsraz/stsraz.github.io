@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     background-color: #3D52A0;
-    border-radius: 20px;
+    width: 100%;
 }
 
 .intro .intro-line {

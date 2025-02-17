@@ -15,103 +15,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <header>
-
+<header>
         <!--Site Navbar-->
         <nav class="navbar">
             <div class="navbar-container">
                 <ul class="navbar-menu">
                     <li class="navbar-item"><a href="./index.html">Home</a></li>
                     <li class="navbar-item"><a href="./jccs.html">Coding Cheat Sheet</a></li>
-                    <li class="navbar-item"></li><a href="./text-styles.html">Text Style Reference</a></li>
+                    <li class="navbar-item"><a href="./text-styles.html">Text Style Reference</a></li>
                 </ul>
             </div>
         </nav>
+</header>
 
-        <h1 class="title-h1">Joe's Coding Cheat Sheet</h1>
-        
-        <!--Coding Cheat Sheet Navbar-->
-        <nav class="jccs-navbar">
-            <div class="jccs-navbar-container">
-                <ul class="jccs-navbar-menu">
-                    <li class="jccs-navbar-item"><a href="#html">HTML</a></li>
-                    <li class="jccs-navbar-item"><a href="#css">CSS</a></li>
-                    <li class="jccs-navbar-item"><a href="#javascript">JavaScript</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
+<body>
 
     <main>
 
-        <h1 id="html">HTML</h1>
+        <!-- Pop Out Sidebar Navigation -->
+        <div id="sidebar" class="sidebar">
+            <!-- Sidebar Navigation Elements -->
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                    <ul>
+                        <li><a href="#html-headers">HTML Headers</a></li>
+                        <li><a href="#html-elements">HTML Elements</a></li>
+                    </ul>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+            </ul>
 
-        <h2>HTML Tags - Headers</h2>
+        </div>
+
+        <h1 class="title-h1">Joe's Coding Cheat Sheet</h1></div>
+
+        <h2 id="page-location" class="sticky-header-1">HTML</h2>
+        
+        <h4 class="subsection-title sticky-header-2">HTML Headers</h4>
 
         <table>
-            <thead>
-                <tr class="table-head">
-                    <td scope="col" class="table-head">Tag</td>
-                    <td scope="col" class="table-head">Example</td>
-                    <td scope="col" class="table-head">Default Size - rem</td>
-                    <td scope="col" class="table-head">Default Size - px - No Root Sizing</td>
+            <thead class="sticky-header-3">
+                <tr>
+                    <td scope="col" class="table-header">Tag</td>
+                    <td scope="col" class="table-header">Example</td>
+                    <td scope="col" class="table-header">Default Size - rem</td>
+                    <td scope="col" class="table-header">Default Size - px - No Root Sizing</td>
                 </tr>
             </thead>
 
             <tbody>
                 <tr scope="row">
-                     <td><h1><pre><code></code></pre>&lt;h1&gt;</code></pre></h1></td>
-                     <td><h1>h1</h1></td>
-                     <td><h1>2 rem</h1></td>
-                     <td><h1>32px</h1></td>
+                    <td><h1><pre><code></code></pre>&lt;h1&gt;</code></pre></h1></td>
+                    <td><h1>h1</h1></td>
+                    <td><h1>2 rem</h1></td>
+                    <td><h1>32px</h1></td>
                 </tr>
                 <tr scope="row">
-                     <td><h2><pre><code>&lt;h2&gt;</code></pre></h2></td>
-                     <td><h2>h2</h2></td>
-                     <td><h2>1.5 rem</h2></td>
-                     <td><h2>24 px</h2></td>
+                    <td><h2><pre><code>&lt;h2&gt;</code></pre></h2></td>
+                    <td><h2>h2</h2></td>
+                    <td><h2>1.5 rem</h2></td>
+                    <td><h2>24 px</h2></td>
                 </tr>
                 <tr scope="row">
-                     <td><h3><pre><code>&lt;h3&gt;</code></pre></h3></td>
-                     <td><h3>h3</h3></td>
-                     <td><h3>1.17 rem</h3></td>
-                     <td><h3>18.72 px</h3></td>
+                    <td><h3><pre><code>&lt;h3&gt;</code></pre></h3></td>
+                    <td><h3>h3</h3></td>
+                    <td><h3>1.17 rem</h3></td>
+                    <td><h3>18.72 px</h3></td>
                 </tr>
                 <tr scope="row">    
-                     <td><h4><pre><code>&lt;h4&gt;</code></pre></h4></td>
-                     <td><h4>h4</h4></td>
-                     <td><h4>1 rem</h4></td>
-                     <td><h4>16 px</h4></td>
+                    <td><h4><pre><code>&lt;h4&gt;</code></pre></h4></td>
+                    <td><h4>h4</h4></td>
+                    <td><h4>1 rem</h4></td>
+                    <td><h4>16 px</h4></td>
                 </tr>
                 <tr scope="row">    
-                     <td><h5><pre><code>&lt;h5&gt;</code></pre></h5></td>
-                     <td><h5>h5</h5></td>
-                     <td><h5>0.83 rem</h5></td>
-                     <td><h5>13.28 px</h5></td>
+                    <td><h5><pre><code>&lt;h5&gt;</code></pre></h5></td>
+                    <td><h5>h5</h5></td>
+                    <td><h5>0.83 rem</h5></td>
+                    <td><h5>13.28 px</h5></td>
                 </tr>
                 <tr scope="row">    
-                     <td><h6><pre><code>&lt;h6&gt;</code></pre></h6></td>
-                     <td><h6>h6</h6></td>
-                     <td><h6>0.67 rem</h6></td>
-                     <td><h6>10.72 px</h6></td>
+                    <td><h6><pre><code>&lt;h6&gt;</code></pre></h6></td>
+                    <td><h6>h6</h6></td>
+                    <td><h6>0.67 rem</h6></td>
+                    <td><h6>10.72 px</h6></td>
                 </tr>
             </tbody>
         </table>
 
-        <h2>HTML Elements</h2>
+        <h4 class="subsection-title sticky-header-2">HTML Elements</h4>
 
         <table>
-            <thead>
+            <thead class="sticky-header-3">
                 <tr>
-                    <td class="table-head">Tag</td>
-                    <td class="table-head">Attributes</td>
-                    <td class="table-head">Description</td>
-                    <td class="table-head">Examples</td>
+                    <td class="table-header">Tag</td>
+                    <td class="table-header">Attributes</td>
+                    <td class="table-header">Description</td>
+                    <td class="table-header">Examples</td>
                 </tr>
             </thead>
-
             <tbody>
                 <!-- <a></a> -->
                 <tr>
@@ -197,14 +199,14 @@
             </tbody>
         </table>
 
-        <h1 id="css">CSS</h1>
+        <h2 id="css" class="section-title sticky-header-1">CSS</h2>
 
         <table>
-            <thead>
+            <thead class="sticky-header-3">
                 <tr>
-                    <td>Property</td>
-                    <td>Value</td>
-                    <td>Description</td>
+                    <td class="table-header">Property</td>
+                    <td class="table-header">Value</td>
+                    <td class="table-header">Description</td>
                 </tr>
             </thead>
 
@@ -317,5 +319,6 @@
         <p>&copy;Joe Rasmussen</p>
 
     </footer>
+    <script src="./js/script-jcss.js"></script>
 </body>
 </html>

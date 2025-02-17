@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    background-color: #ADBBDA;
+    background-color:  	hsl(221, 38%, 77%);
 }
 
 h1 {
@@ -26,7 +26,7 @@ p {
 }
 
 .back-to-top a:hover {
-    background-color: #7091E6;
+    background-color: hsl(223, 70%, 67%);
 }
 
 /* Colors */
@@ -36,50 +36,50 @@ p {
     grid-template-rows: repeat(2, 1fr);
 
     border: 2px solid black;
-    border-radius: 20px;
+    width: 100%;
 
-    margin: 0 20px 0 5px;
-
-    background-color: #3D52A0;
+    background-color: hsl(227, 45%, 43%);
 }
 
 #color-1, #color-1 p {
     grid-column: 1;
     grid-row: 1;
 
-    background-color: #3D52A0;
+    background-color: hsl(227, 45%, 43%);
 }
 
 #color-2, #color-2 p {
     grid-column: 2;
     grid-row: 1;
 
-    background-color: #7091E6;
+    background-color: hsl(223, 70%, 67%);
 }
 
 #color-3, #color-3 p {
     grid-column: 3;
     grid-row: 1;
 
-    background-color: #8697C4;
+    background-color: hsl(224, 34%, 65%);
 }
 
 #color-4, #color-4 p {
     grid-column: 1;
     grid-row: 2;
 
-    background-color: #ADBBDA;
+    background-color: hsl(221, 38%, 77%);
 }
 
 #color-5, #color-5 p {
     grid-column: 2;
     grid-row: 2;
 
-    background-color: #EDE8F5;
+    background-color: hsl(263, 39%, 94%);
 }
 
 .color-div {
     margin: 5px 5px;
+    background-clip: padding-box;
+    padding: 50px;
 
     text-align: center;
 
@@ -128,21 +128,28 @@ p {
     border-radius: 20px;
 
     margin: 0 20px 0 5px;
-
 }
 
 .text-container {
     border: 2px solid black;
     border-radius: 20px;
 
-    margin: 20px;
+    margin: 20px auto;
 
+    width: 50%;
 
     text-align: center;
-
-    overflow: auto;
 }
 
 .text-container ul {
     list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.text-container li {
+    margin: 10px 0;
+}
+
+.testing {
+    border: 3px solid red;
 }
